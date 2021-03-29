@@ -1,6 +1,10 @@
-function change()
-{var header = document.getElementById("hid123");     
-header.innerHTML = "CSIE@CGU";    
-var para = document.getElementById("pid123");   
-para.innerHTML = "«ç»ò¨º»ò´Î¡I¡I.";}  
-  function myFunction() {   var btn = document.createElement("BUTTON");   btn.innerHTML = "CLICK ME"; document.body.appendChild(btn).addEventListener("click", change); }
+function change() {
+    $("#hid123").html("CSIE@CGU");
+    $("#pid123").html("æ€Žéº¼é‚£éº¼æ£’")
+}
+function new_button() {
+    var btn="<button id='change'>Change this document</button>";
+    $("body").append(btn);
+    $("#change").click(change);
+}
+$("#btn").click(new_button);
